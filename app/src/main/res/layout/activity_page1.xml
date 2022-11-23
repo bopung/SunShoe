@@ -9,7 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -238,7 +239,8 @@
                 android:paddingLeft="20dp"
                 android:paddingTop="4dp"
                 android:text="Next >"
-                app:backgroundTint="#B51BCF" />
+                app:backgroundTint="#B51BCF"
+                tools:ignore="TouchTargetSizeCheck" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
