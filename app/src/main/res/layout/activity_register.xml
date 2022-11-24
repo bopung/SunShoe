@@ -44,7 +44,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/name"
-        android:layout_margin="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
@@ -58,27 +57,27 @@
         android:textColorHint="@color/white" />
 
     <EditText
-        android:id="@+id/noTelp"
+        android:id="@+id/confirmpass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/pass"
-        android:layout_margin="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:background="#30ffffff"
         android:drawablePadding="20dp"
-        android:hint="No Telp (+62)"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
         android:padding="20dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
+
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/noTelp"
-        android:layout_margin="10dp"
+        android:layout_below="@id/confirmpass"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
@@ -90,30 +89,38 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
 
-    <EditText
-        android:id="@+id/alamat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/email"
-        android:layout_margin="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="#30ffffff"
-        android:drawablePadding="20dp"
-        android:hint="Alamat"
-        android:padding="20dp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white" />
-
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonRegist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/alamat"
+        android:layout_below="@id/email"
         android:layout_marginLeft="150dp"
         android:backgroundTint="@color/design_default_color_secondary"
         android:text="Sign Up" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonRegist"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:text="Already have an account ? "
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:text=" Login Here"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#2196F3"
+        android:textStyle="bold" />
 
 </RelativeLayout>
