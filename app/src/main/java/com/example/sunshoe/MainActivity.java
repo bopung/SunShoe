@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                         if (response.contains("success")) {
                             hideDialog();
                             Toast.makeText(context, "Login Berhasil Masuk!", Toast.LENGTH_LONG).show();
-                            Intent intent = new Intent(MainActivity.this, page1.class);
+                            Intent intent = new Intent(MainActivity.this, DashbordToko.class);
                             startActivityForResult(intent, REQUEST_CODE_ADD);
 
                         } else {
