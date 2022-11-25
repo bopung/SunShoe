@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".loading">
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:background="@drawable/sun"
-        android:layout_marginTop="200dp"
         android:layout_marginLeft="60dp"
-        >
+        android:layout_marginTop="200dp"
+        android:background="@drawable/ssvs">
 
     </ImageView>
 
