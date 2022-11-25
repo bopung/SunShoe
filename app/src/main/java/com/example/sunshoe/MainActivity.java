@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
     //login sistem
     public void LoginSistem(){
-        final String Url = "https://stevanuspungky.my.id/ehotel/login.php";
+        final String Url = "https://stevanuspungky.my.id/mobapp/login.php";
 
         final String NamaUser = username.getText().toString().trim();
         final String Pass = password.getText().toString().trim();
