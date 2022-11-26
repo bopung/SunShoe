@@ -55,7 +55,17 @@ public class MainActivity extends AppCompatActivity {
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LoginSistem();
+                String usernameKey = username.getText().toString();
+                String passwordKey = password.getText().toString();
+                if (usernameKey.equals("Admin") && passwordKey.equals("root")){
+                    //jika login berhasil
+                    Toast.makeText(getApplicationContext(), "Selamat Datang Admin "+ usernameKey,
+                            Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(MainActivity.this, AdminPanel.class);
+                    MainActivity.this.startActivity(intent);
+                }else {
+                    LoginSistem();
+                }
             }
         });
     }
