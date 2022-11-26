@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String usernameKey = username.getText().toString();
                 String passwordKey = password.getText().toString();
-                if (usernameKey.equals("Admin") && passwordKey.equals("root")){
+                if (usernameKey.equals("Jurgen") && passwordKey.equals("admin")){
                     //jika login berhasil
                     Toast.makeText(getApplicationContext(), "Selamat Datang Admin "+ usernameKey,
                             Toast.LENGTH_SHORT).show();
