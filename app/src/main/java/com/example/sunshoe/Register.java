@@ -40,7 +40,7 @@ import java.util.Map;
 
 public class Register extends AppCompatActivity {
 
-    private EditText name, pass;
+    private EditText name, pass, email;
     private String action_flag="add";
     private String refreshFlag="0";
     private static final String TAG="RegistActivity";
@@ -51,7 +51,7 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-//        button untuk save data ke server
+//      button untuk save data ke server
         Button buttonRegist = findViewById(R.id.buttonRegist);
         buttonRegist.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,9 +77,9 @@ public class Register extends AppCompatActivity {
 
     private void initUI() {
         pDialog = new ProgressDialog(Register.this);
-
         name   = (EditText) findViewById(R.id.name);
         pass  = (EditText) findViewById(R.id.pass);
+        email  = (EditText) findViewById(R.id.email);
     }
 
     @Override
@@ -110,6 +110,7 @@ public class Register extends AppCompatActivity {
         refreshFlag="1";
         final String Username = name.getText().toString();
         final String Password = pass.getText().toString();
+        final String Email = email.getText().toString();
 
         String url = AppConfig.REGIST_URL;
         pDialog.setMessage("Menyimpan Data...");
@@ -143,6 +144,7 @@ public class Register extends AppCompatActivity {
 
                 params.put("username",Username);
                 params.put("password",Password);
+                params.put("email",Email);
                 if (action_flag.equals("add")){
                     params.put("id","0");
                 }else{
