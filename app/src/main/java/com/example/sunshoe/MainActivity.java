@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -61,13 +62,19 @@ public class MainActivity extends AppCompatActivity {
                     //jika login berhasil
                     Toast.makeText(getApplicationContext(), "Selamat Datang Admin "+ usernameKey,
                             Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(MainActivity.this, AdminPanel.class);
-                    MainActivity.this.startActivity(intent);
+                        gotoUrl("https://stevanuspungky.my.id");
+                    //Intent intent = new Intent(MainActivity.this, AdminPanel.class);
+                    //MainActivity.this.startActivity(intent);
                 }else {
                     LoginSistem();
                 }
             }
         });
+    }
+
+    private void gotoUrl(String s) {
+        Uri uri = Uri.parse(s);
+        startActivity(new Intent(Intent.ACTION_VIEW,uri));
     }
 
     //login sistem
