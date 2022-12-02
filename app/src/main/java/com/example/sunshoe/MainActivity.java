@@ -62,9 +62,9 @@ public class MainActivity extends AppCompatActivity {
                     //jika login berhasil
                     Toast.makeText(getApplicationContext(), "Selamat Datang Admin "+ usernameKey,
                             Toast.LENGTH_SHORT).show();
-                        gotoUrl("https://stevanuspungky.my.id");
-                    //Intent intent = new Intent(MainActivity.this, AdminPanel.class);
-                    //MainActivity.this.startActivity(intent);
+                        //gotoUrl("https://stevanuspungky.my.id");
+                    Intent intent = new Intent(MainActivity.this, product.class);
+                    MainActivity.this.startActivity(intent);
                 }else {
                     LoginSistem();
                 }
