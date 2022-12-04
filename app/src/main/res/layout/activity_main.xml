@@ -54,7 +54,7 @@
         android:background="@drawable/radius_formwhiteblur"
         android:elevation="5dp"
         android:hint="Password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:paddingLeft="15dp"
         android:textColor="#000000"
         android:textColorHint="#8F8F8F"
