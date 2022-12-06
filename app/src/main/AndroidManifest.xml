@@ -16,6 +16,18 @@
         android:theme="@style/Theme.SunShoe"
         tools:targetApi="31">
         <activity
+            android:name=".recommendedItem"
+            android:exported="false" />
+        <activity
+            android:name=".shoeDetail"
+            android:exported="false" />
+        <activity
+            android:name=".popularItem"
+            android:exported="false" />
+        <activity
+            android:name=".allMenu"
+            android:exported="false" />
+        <activity
             android:name=".Shoe"
             android:exported="false" />
         <activity
