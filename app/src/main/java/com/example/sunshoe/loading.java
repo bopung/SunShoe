@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -22,8 +21,10 @@ public class loading extends AppCompatActivity {
         boolean user = dbUser.cekcek();
         if (user) {
             time();
+            dbUser.close();
         } else {
             timeout();
+            dbUser.close();
         }
 
     }
@@ -32,7 +33,7 @@ public class loading extends AppCompatActivity {
         new Timer().schedule(new TimerTask() {
             @Override
             public void run() {
-                Intent intent = new Intent(loading.this, MainActivity.class);
+                Intent intent = new Intent(loading.this, login.class);
                 startActivity(intent);
                 finish();
             }
@@ -43,7 +44,7 @@ public class loading extends AppCompatActivity {
         new Timer().schedule(new TimerTask() {
             @Override
             public void run() {
-                Intent intent = new Intent(loading.this, Shoe.class);
+                Intent intent = new Intent(loading.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }

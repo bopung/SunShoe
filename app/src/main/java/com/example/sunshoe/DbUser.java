@@ -25,18 +25,29 @@ public class DbUser {
         return this;
     }
 
+    public String getName(){
+        Cursor cursor = database.query(db.TABLE_USERS, new String[] {db.USER_USERNAME}, null, null, null, null, null, null);
+
+        if(cursor != null){
+            if(cursor.moveToFirst()){
+                return String.format("%s",cursor.getString(0));
+            }
+        }
+
+        return null;
+    }
+
     public void close() {
         db.close();
     }
 
     //using this method we can add users to user table
-    public void addUser(String id, String pass) {
+    public void addUser(String username) {
 
         //create content values to insert
         ContentValues values = new ContentValues();
 
-        values.put(db.USER_ID, id);
-        values.put(db.USER_PASS, pass);
+        values.put(db.USER_USERNAME, username);
         database.insert(db.TABLE_USERS, null, values);
     }
 

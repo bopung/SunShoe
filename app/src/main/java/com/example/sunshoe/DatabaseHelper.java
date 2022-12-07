@@ -3,26 +3,25 @@ package com.example.sunshoe;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     //DATABASE NAME
-    public static final String DATABASE_NAME = "mobapp";
+    public static final String DATABASE_NAME = "DB";
 
     //DATABASE VERSION
     public static final int DATABASE_VERSION = 1;
 
     //USERS TABLE
     //TABLE NAME
-    public static final String TABLE_USERS = "users";
-    public static final String USER_ID = "id";
-    public static final String USER_PASS = "pass";
+    public static final String TABLE_USERS = "user";
+    public static final String USER_USERNAME = "username";
 
     public static final String SQL_TABLE_USERS = " CREATE TABLE " + TABLE_USERS
             + " ( "
-            + USER_ID + " INTEGER PRIMARY KEY, "
-            + USER_PASS + " TEXT"
+            + USER_USERNAME + " TEXT "
             + " ) ";
 
 
@@ -34,6 +33,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         //Create Table when oncreate gets called
         sqLiteDatabase.execSQL(SQL_TABLE_USERS);
+        Log.i("Helper", "helper");
     }
 
     @Override
