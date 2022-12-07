@@ -91,12 +91,20 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(String response) {
 
+
                         //If we are getting success from server
                         if (response.contains("success")) {
                             hideDialog();
+
+                            DbUser dbUser = new DbUser(context);
+                            dbUser.open();
+                            dbUser.addUser(NamaUser,Pass);
+                            dbUser.close();
+
                             Toast.makeText(context, "Login Berhasil Masuk!", Toast.LENGTH_LONG).show();
                             Intent intent = new Intent(MainActivity.this, DashbordToko.class);
                             startActivityForResult(intent, REQUEST_CODE_ADD);
+
 
                         } else {
                             hideDialog();
