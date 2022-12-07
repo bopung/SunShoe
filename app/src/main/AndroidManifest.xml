@@ -16,6 +16,12 @@
         android:theme="@style/Theme.SunShoe"
         tools:targetApi="31">
         <activity
+            android:name=".InputBarang"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePage"
+            android:exported="false" />
+        <activity
             android:name=".recommendedItem"
             android:exported="false" />
         <activity
