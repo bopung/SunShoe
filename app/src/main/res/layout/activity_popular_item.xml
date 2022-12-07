@@ -20,7 +20,7 @@
         android:id="@+id/all_menu_name"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:fontFamily="@font/open_sans_bold"
+        android:fontFamily="monospace"
         android:text="Nasi Padang"
         android:textColor="#333333"
         android:textSize="12sp"

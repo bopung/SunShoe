@@ -21,22 +21,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:fontFamily="@font/open_sans_bold"
-                android:text="Indonesian Food"
+                android:fontFamily="monospace"
+                android:text="Hello"
                 android:textColor="#333333"
                 android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/imageView14"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_cart" />
 
             <EditText
                 android:id="@+id/editText6"
@@ -63,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:fontFamily="@font/open_sans_bold"
+                android:fontFamily="monospace"
                 android:text="Popular this Week"
                 android:textColor="#333333"
                 android:textSize="18sp"
@@ -86,7 +76,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="22dp"
                 android:layout_marginTop="24dp"
-                android:fontFamily="@font/open_sans_bold"
+                android:fontFamily="monospace"
                 android:text="Recommened for You"
                 android:textColor="#333333"
                 android:textSize="18sp"
@@ -108,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:fontFamily="@font/open_sans_bold"
+                android:fontFamily="monospace"
                 android:text="All Menu Items"
                 android:textColor="#333333"
                 android:textSize="18sp"
