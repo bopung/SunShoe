@@ -14,13 +14,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/inputsepatu"
+            android:id="@+id/BuktiPembayaran"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="0dp"
             android:layout_marginBottom="10dp"
-            android:text="Input Sepatu"
+            android:text="Bukti Pembayaran"
             android:textAlignment="center"
             android:textColor="#F8F2F2"
             android:textSize="34sp"
@@ -31,18 +31,18 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="50dp"
             android:layout_marginRight="25dp"
             android:layout_marginBottom="15dp"
             android:background="@drawable/radius_formwhiteblur"
             android:elevation="5dp"
-            android:hint="Nama Sepatu"
+            android:hint="Nama Penerima"
             android:inputType="textPersonName"
             android:paddingLeft="15dp"
             android:textSize="15dp" />
 
         <EditText
-            android:id="@+id/harga"
+            android:id="@+id/nomor"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginLeft="25dp"
@@ -51,13 +51,13 @@
             android:layout_marginBottom="15dp"
             android:background="@drawable/radius_formwhiteblur"
             android:elevation="5dp"
-            android:hint="harga Sepatu"
+            android:hint="Nomor HP"
             android:inputType="textPassword"
             android:paddingLeft="15dp"
             android:textSize="15dp" />
 
         <EditText
-            android:id="@+id/ukuran"
+            android:id="@+id/alamat"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginLeft="25dp"
@@ -66,13 +66,13 @@
             android:layout_marginBottom="15dp"
             android:background="@drawable/radius_formwhiteblur"
             android:elevation="5dp"
-            android:hint="Ukuran Sepatu"
+            android:hint="Alamat penerima"
             android:inputType="textPassword"
             android:paddingLeft="15dp"
             android:textSize="15dp" />
 
         <EditText
-            android:id="@+id/link"
+            android:id="@+id/norekpenerima"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginLeft="25dp"
@@ -81,62 +81,55 @@
             android:layout_marginBottom="15dp"
             android:background="@drawable/radius_formwhiteblur"
             android:elevation="5dp"
-            android:hint="link gambar sepatu"
+            android:hint="No. Rekening"
             android:inputType="text"
             android:paddingLeft="15dp"
             android:textSize="15dp" />
 
-        <EditText
-            android:id="@+id/link2"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="25dp"
-            android:layout_marginBottom="15dp"
-            android:background="@drawable/radius_formwhiteblur"
-            android:elevation="5dp"
-            android:hint="merk sepatu"
-            android:inputType="text"
-            android:paddingLeft="15dp"
-            android:textSize="15dp" />
+        <ImageView
+            android:id="@+id/gambar"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="125dp"
+            android:src="@drawable/bca">
 
-        <EditText
-            android:id="@+id/link3"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="25dp"
-            android:layout_marginBottom="15dp"
-            android:background="@drawable/radius_formwhiteblur"
-            android:elevation="5dp"
-            android:hint="category sepatu"
-            android:inputType="text"
-            android:paddingLeft="15dp"
-            android:textSize="15dp" />
+        </ImageView>
 
-        <EditText
-            android:id="@+id/deskripsi"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="25dp"
-            android:layout_marginBottom="15dp"
-            android:background="@drawable/radius_formwhiteblur"
-            android:elevation="5dp"
-            android:hint="Deskripsi Sepatu"
-            android:inputType="textMultiLine"
-            android:paddingLeft="15dp"
-            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/rekening"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4270212391"
+            android:textSize="24sp"
+            android:layout_marginLeft="140dp"
+            android:textAlignment="center">
+
+        </TextView>
+        <TextView
+            android:id="@+id/atasnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a/n Vincent Jonathan Budiman"
+            android:textSize="24sp"
+            android:layout_marginLeft="40dp"
+            android:textAlignment="center">
+
+        </TextView>
+        <Button
+            android:id="@+id/buttonUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:text="Upload" />
 
         <Button
             android:id="@+id/buttonConfirmt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="160dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="20dp"
             android:backgroundTint="@color/design_default_color_secondary"
             android:text="Confirm" />
     </LinearLayout>

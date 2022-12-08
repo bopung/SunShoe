@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProfileFragment"
+    android:background="@drawable/background"
     >
 
         <TextView
@@ -13,10 +14,11 @@
             android:text="TextView"
             android:textSize="24sp"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="150dp"
             android:layout_marginRight="25dp"
             android:layout_marginBottom="0dp"
             android:textAlignment="center"
+            android:textColor="@color/white"
             />
 
         <TextView
@@ -30,6 +32,7 @@
             android:layout_marginRight="25dp"
             android:layout_marginBottom="15dp"
             android:textAlignment="center"
+            android:textColor="@color/white"
             />
 
         <Button
@@ -38,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="200dp"
             android:layout_marginRight="25dp"
             android:layout_marginBottom="15dp"
             android:text="location" />
@@ -60,10 +63,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/AboutUs"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="80dp"
             android:layout_marginRight="25dp"
             android:layout_marginBottom="15dp"
             android:text="Logout" />
 
-
+\
 </RelativeLayout>
