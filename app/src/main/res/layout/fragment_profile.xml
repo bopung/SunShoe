@@ -1,45 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileFragment">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    tools:context=".ProfileFragment"
+    >
 
         <TextView
             android:id="@+id/NamaProfile"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:text="TextView"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="0dp"
+            android:textAlignment="center"
+            />
 
         <TextView
             android:id="@+id/textView13"
+            android:layout_below="@id/NamaProfile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hi there !" />
+            android:text="Hi there !"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"
+            />
 
         <Button
             android:id="@+id/btnLocation"
+            android:layout_below="@id/textView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="15dp"
             android:text="location" />
 
         <Button
             android:id="@+id/AboutUs"
+            android:layout_below="@id/btnLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="15dp"
             android:text="About Us" />
 
         <Button
             android:id="@+id/btnLogout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/AboutUs"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="15dp"
             android:text="Logout" />
 
-    </LinearLayout>
-</FrameLayout>
+
+</RelativeLayout>
