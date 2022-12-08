@@ -99,22 +99,24 @@
             android:id="@+id/rekening"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4270212391"
-            android:textSize="24sp"
             android:layout_marginLeft="140dp"
-            android:textAlignment="center">
+            android:text="4270212391"
+            android:textAlignment="center"
+            android:textSize="24sp">
 
         </TextView>
+
         <TextView
             android:id="@+id/atasnama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="a/n Vincent Jonathan Budiman"
-            android:textSize="24sp"
             android:layout_marginLeft="40dp"
-            android:textAlignment="center">
+            android:text="a/n Vincent Jonathan Budiman"
+            android:textAlignment="center"
+            android:textSize="24sp">
 
         </TextView>
+
         <Button
             android:id="@+id/buttonUpload"
             android:layout_width="wrap_content"
