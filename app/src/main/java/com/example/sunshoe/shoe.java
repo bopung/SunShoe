@@ -10,8 +10,9 @@ public class shoe implements Serializable {
     private String product_image;
     private String brand;
     private String category;
+    private String description;
 
-    public shoe(int product_id, String product_name, int product_price, int product_size, String product_image, String brand, String category) {
+    public shoe(int product_id, String product_name, int product_price, int product_size, String product_image, String brand, String category, String description) {
         this.product_id = product_id;
         this.product_name = product_name;
         this.product_price = product_price;
@@ -19,6 +20,7 @@ public class shoe implements Serializable {
         this.product_image = product_image;
         this.brand = brand;
         this.category = category;
+        this.description = description;
     }
 
     public int getProduct_id() {
@@ -75,5 +77,13 @@ public class shoe implements Serializable {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
