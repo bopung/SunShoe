@@ -37,7 +37,7 @@ public class AllMenuAdapter extends RecyclerView.Adapter<AllMenuAdapter.AllMenuV
     public void onBindViewHolder(@NonNull AllMenuViewHolder holder, final int position) {
 
         holder.allMenuName.setText(allmenuList.get(position).getProduct_name());
-        holder.allMenuPrice.setText("Rp "+ Integer.toString(allmenuList.get(position).getProduct_price()));
+        holder.allMenuPrice.setText(Integer.toString(allmenuList.get(position).getProduct_price())+ " K" );
         holder.allMenuCharges.setText(Integer.toString(allmenuList.get(position).getProduct_size()));
         holder.allMenuNote.setText(allmenuList.get(position).getBrand());
 
@@ -48,12 +48,12 @@ public class AllMenuAdapter extends RecyclerView.Adapter<AllMenuAdapter.AllMenuV
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(context, shoeDetail.class);
-                i.putExtra("id",allmenuList.get(position).getProduct_id());
+                i.putExtra("id",Integer.toString(allmenuList.get(position).getProduct_id()));
                 i.putExtra("name", allmenuList.get(position).getProduct_name());
                 i.putExtra("price", Integer.toString(allmenuList.get(position).getProduct_price()));
                 i.putExtra("image", allmenuList.get(position).getProduct_image());
                 i.putExtra("desc", allmenuList.get(position).getDescription());
-                i.putExtra("size", allmenuList.get(position).getProduct_size());
+                i.putExtra("size", Integer.toString(allmenuList.get(position).getProduct_size()));
 
 
                 i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
