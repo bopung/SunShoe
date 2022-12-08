@@ -1,4 +1,4 @@
-package adapter;
+package com.example.sunshoe;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,8 +12,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-import com.example.sunshoe.R;
-import com.example.sunshoe.shoe;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -39,23 +37,23 @@ public class AllMenuAdapter extends RecyclerView.Adapter<AllMenuAdapter.AllMenuV
     public void onBindViewHolder(@NonNull AllMenuViewHolder holder, final int position) {
 
         holder.allMenuName.setText(allmenuList.get(position).getProduct_name());
-        holder.allMenuPrice.setText("Rp "+allmenuList.get(position).getProduct_price());
-        holder.allMenuTime.setText(allmenuList.get(position).get());
-        holder.allMenuRating.setText(allmenuList.get(position).getRating());
-        holder.allMenuCharges.setText(allmenuList.get(position).getDeliveryCharges());
-        holder.allMenuNote.setText(allmenuList.get(position).getNote());
+        holder.allMenuPrice.setText("Rp "+ Integer.toString(allmenuList.get(position).getProduct_price()));
+        holder.allMenuCharges.setText(Integer.toString(allmenuList.get(position).getProduct_size()));
+        holder.allMenuNote.setText(allmenuList.get(position).getBrand());
 
-        Picasso.get().load(model.getImage()).fit().centerCrop().into(viewHolder.menuAddImg);
+        Picasso.get().load(allmenuList.get(position).getProduct_image()).fit().centerCrop().into(holder.allMenuImage);
 
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(context, FoodDetails.class);
-                i.putExtra("name", allmenuList.get(position).getName());
-                i.putExtra("price", allmenuList.get(position).getPrice());
-                i.putExtra("rating", allmenuList.get(position).getRating());
-                i.putExtra("image", allmenuList.get(position).getImageUrl());
+                Intent i = new Intent(context, shoeDetail.class);
+                i.putExtra("name", allmenuList.get(position).getProduct_name());
+                i.putExtra("price", allmenuList.get(position).getProduct_price());
+                i.putExtra("image", allmenuList.get(position).getProduct_image());
+                i.putExtra("desc", allmenuList.get(position).getDescription());
+
+
 
                 context.startActivity(i);
             }
@@ -83,6 +81,7 @@ public class AllMenuAdapter extends RecyclerView.Adapter<AllMenuAdapter.AllMenuV
             allMenuTime = itemView.findViewById(R.id.all_menu_deliverytime);
             allMenuPrice = itemView.findViewById(R.id.all_menu_price);
             allMenuImage = itemView.findViewById(R.id.all_menu_image);
+
         }
     }
 
