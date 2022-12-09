@@ -73,6 +73,14 @@ public class ProfileFragment extends Fragment {
         dbuser.close();
         fullname.setText(name);
 
+        Button location = (Button) view.findViewById(R.id.btnLocation);
+        location.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(view.getContext(), Maps.class));
+            }
+        });
+
         Button btnLogout = (Button) view.findViewById(R.id.btnLogout);
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
