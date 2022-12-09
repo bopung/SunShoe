@@ -9,50 +9,49 @@
 
         <TextView
             android:id="@+id/NamaProfile"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="TextView"
-            android:textSize="24sp"
+            android:layout_width="364dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="120dp"
             android:layout_marginRight="25dp"
             android:layout_marginBottom="0dp"
+            android:text="TextView"
             android:textAlignment="center"
             android:textColor="@color/white"
-            />
+            android:textSize="48sp" />
 
         <TextView
             android:id="@+id/textView13"
+            android:layout_width="361dp"
+            android:layout_height="35dp"
             android:layout_below="@id/NamaProfile"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Hi there !"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="0dp"
+            android:layout_marginTop="16dp"
             android:layout_marginRight="25dp"
             android:layout_marginBottom="15dp"
+            android:text="Hi there !"
             android:textAlignment="center"
             android:textColor="@color/white"
-            />
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/btnLocation"
-            android:layout_below="@id/textView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/textView13"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="150dp"
             android:layout_marginRight="25dp"
             android:layout_marginBottom="15dp"
             android:text="location" />
 
         <Button
             android:id="@+id/AboutUs"
-            android:layout_below="@id/btnLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/btnLocation"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="6dp"
             android:layout_marginRight="25dp"
             android:layout_marginBottom="15dp"
             android:text="About Us" />
@@ -63,10 +62,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/AboutUs"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
             android:layout_marginRight="25dp"
             android:layout_marginBottom="15dp"
             android:text="Logout" />
 
-\
+        \
 </RelativeLayout>

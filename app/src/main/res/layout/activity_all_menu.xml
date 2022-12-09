@@ -53,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
-        android:text="3.9"
+        android:text="5.0"
         app:layout_constraintBottom_toBottomOf="@+id/imageView6"
         app:layout_constraintStart_toEndOf="@+id/imageView6"
         app:layout_constraintTop_toTopOf="@+id/imageView6" />
@@ -65,7 +65,7 @@
         android:layout_marginStart="16dp"
         android:background="@drawable/time_bg"
         android:gravity="center"
-        android:text="45 mins"
+        android:text="10% off"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="8sp"
@@ -78,7 +78,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Free Delivery"
+        android:text="Best Item"
         app:layout_constraintBottom_toBottomOf="@+id/all_menu_deliverytime"
         app:layout_constraintStart_toEndOf="@+id/all_menu_deliverytime"
         app:layout_constraintTop_toTopOf="@+id/all_menu_deliverytime" />
