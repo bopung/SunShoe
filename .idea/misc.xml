@@ -7,25 +7,11 @@
         <entry key="..\:/A S U S/SunShoe/app/src/main/res/drawable/light_orange_circle.xml" value="0.169" />
         <entry key="..\:/A S U S/SunShoe/app/src/main/res/drawable/violet_circular_border.xml" value="0.169" />
         <entry key="..\:/A S U S/SunShoe/app/src/main/res/drawable/white_circular_border.xml" value="0.169" />
-        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_aboutus.xml" value="0.25" />
-        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_all_menu.xml" value="0.4" />
-        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_buktibayar.xml" value="0.25" />
         <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_dashbord_toko.xml" value="0.264" />
-        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_delete.xml" value="0.25" />
-        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_input_barang.xml" value="0.25" />
-        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_loading.xml" value="0.25" />
-        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_main.xml" value="0.22554347826086957" />
-        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_maps.xml" value="0.25" />
-        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_order.xml" value="0.1721014492753623" />
         <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_page1.xml" value="0.264" />
         <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_page2.xml" value="0.264" />
         <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_register.xml" value="0.2" />
-        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_shoe_detail.xml" value="0.25" />
-        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_transaction_detail.xml" value="0.1721014492753623" />
-        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_upload_image.xml" value="0.25" />
-        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/fragment_home.xml" value="0.25" />
-        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
         <entry key="app/src/main/res/drawable-v24/ic_outline_order_24.xml" value="0.15" />
         <entry key="app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.15" />
         <entry key="app/src/main/res/drawable/ic_outline_help_24.xml" value="0.15" />
@@ -34,7 +20,7 @@
         <entry key="app/src/main/res/font/open_sans_semibold.xml" value="0.1703125" />
         <entry key="app/src/main/res/layout/activity_aboutus.xml" value="0.14336372847011145" />
         <entry key="app/src/main/res/layout/activity_admin_panel.xml" value="0.23353293413173654" />
-        <entry key="app/src/main/res/layout/activity_all_menu.xml" value="0.33881581624348955" />
+        <entry key="app/src/main/res/layout/activity_all_menu.xml" value="0.43409881591796873" />
         <entry key="app/src/main/res/layout/activity_bottom_nav.xml" value="0.14336372847011145" />
         <entry key="app/src/main/res/layout/activity_buktibayar.xml" value="0.2504528985507246" />
         <entry key="app/src/main/res/layout/activity_dashbord_toko.xml" value="0.31550108997534354" />
@@ -45,6 +31,8 @@
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.23030830854823647" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.31583404541015647" />
         <entry key="app/src/main/res/layout/activity_maps.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/activity_order.xml" value="0.14336372847011145" />
+        <entry key="app/src/main/res/layout/activity_order_done.xml" value="0.14336372847011145" />
         <entry key="app/src/main/res/layout/activity_page1.xml" value="0.2011444091796875" />
         <entry key="app/src/main/res/layout/activity_popular_item.xml" value="0.4848612467447917" />
         <entry key="app/src/main/res/layout/activity_product.xml" value="0.2504528985507246" />
@@ -54,6 +42,7 @@
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.35217285156250006" />
         <entry key="app/src/main/res/layout/activity_shoe.xml" value="0.1882537841796875" />
         <entry key="app/src/main/res/layout/activity_shoe_detail.xml" value="0.20653584798177083" />
+        <entry key="app/src/main/res/layout/activity_transaction_detail.xml" value="0.29059883589198643" />
         <entry key="app/src/main/res/layout/activity_upload_image.xml" value="0.2504528985507246" />
         <entry key="app/src/main/res/layout/bottom_nav_menu.xml" value="0.10235507246376811" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.21920289855072464" />

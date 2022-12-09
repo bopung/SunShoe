@@ -47,6 +47,17 @@ public class AdminPanel extends AppCompatActivity {
 
         });
 
+        Button button6 = (Button) findViewById(R.id.button6);
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AdminPanel.this, Order_Done.class);
+                startActivity(intent);
+
+            }
+
+        });
+
     }
 
 }
