@@ -52,7 +52,7 @@ public class deleteadapter extends RecyclerView.Adapter<deleteadapter.AllMenuVie
     public void onBindViewHolder(@NonNull AllMenuViewHolder holder, final int position) {
 
         holder.allMenuName.setText(allmenuList.get(position).getProduct_name());
-        holder.allMenuPrice.setText("Rp " + Integer.toString(allmenuList.get(position).getProduct_price()));
+        holder.allMenuPrice.setText(Integer.toString(allmenuList.get(position).getProduct_price())+ " K");
         holder.allMenuCharges.setText(Integer.toString(allmenuList.get(position).getProduct_size()));
         holder.allMenuNote.setText(allmenuList.get(position).getBrand());
 
