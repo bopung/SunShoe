@@ -58,62 +58,27 @@ public class transaction extends RecyclerView.Adapter<transaction.AllMenuViewHol
 
         Picasso.get().load(allmenuList.get(position).getProduct_image()).fit().centerCrop().into(holder.allMenuImage);
 
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(context, transaction_detail.class);
+                i.putExtra("id",Integer.toString(allmenuList.get(position).getId()));
+                i.putExtra("name", allmenuList.get(position).getProduct_name());
+                i.putExtra("price", Integer.toString(allmenuList.get(position).getProduct_price()));
+                i.putExtra("image", allmenuList.get(position).getProduct_image());
+                i.putExtra("nama", allmenuList.get(position).getNama());
+                i.putExtra("size", Integer.toString(allmenuList.get(position).getProduct_size()));
+                i.putExtra("alamat", allmenuList.get(position).getAlamat());
+                i.putExtra("norek", allmenuList.get(position).getNorek());
+                i.putExtra("bukti", allmenuList.get(position).getBukti());
+                i.putExtra("status", allmenuList.get(position).getStatus());
 
-//        holder.itemView.setOnClickListener(new View.OnClickListener() {
-////            @Override
-//            public void onClick(View view) {
-//                new AlertDialog.Builder(context)
-//                        .setTitle("Delete?")
-//                        .setMessage("Are you sure you want to delete?")
-//                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-//                            public void onClick(DialogInterface dialog, int which) {
-//                                //    metode untuk save ke server menggunakan volley
-//                                String url = "https://stevanuspungky.my.id/mobapp/deletedata.php";
-//
-//                                StringRequest postRequest = new StringRequest(Request.Method.POST, url,
-//                                        new Response.Listener<String>() {
-//                                            @Override
-//                                            public void onResponse(String response) {
-//                                                Log.d("Register", "response :" + response);
-//                                                Toast.makeText(context, "Success Deleting Product !", Toast.LENGTH_SHORT).show();
-////                        processResponse("Save Data", response);
-//
-//                                                if(context instanceof Activity)
-//                                                { ((Activity)context).recreate();
-//                                                }
-//
-//
-//                                            }
-//                                        },
-//                                        new Response.ErrorListener() {
-//                                            @Override
-//                                            public void onErrorResponse(VolleyError error) {
-//                                                error.printStackTrace();
-//                                            }
-//                                        }
-//                                ) {
-//                                    @Override
-//                                    protected Map<String, String> getParams() {
-//                                        Map<String, String> params = new HashMap<>();
-//                                        // the POST parameters:
-//
-//                                        params.put("id", Integer.toString(allmenuList.get(position).getProduct_id()));
-//
-//                                        return params;
-//                                    }
-//                                };
-//                                Volley.newRequestQueue(context).add(postRequest);
-//
-//                            }
-//
-//
-//                        })
-//
-//                        .setNegativeButton(android.R.string.no, null)
-//                        .setIcon(android.R.drawable.ic_dialog_alert)
-//                        .show();
-//            }
-//        });
+
+                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(i);
+            }
+        });
+
 
     }
 
@@ -124,7 +89,7 @@ public class transaction extends RecyclerView.Adapter<transaction.AllMenuViewHol
 
     public static class AllMenuViewHolder extends RecyclerView.ViewHolder {
 
-        TextView allMenuName, allMenuNote, allMenuRating, allMenuTime, allMenuCharges, allMenuPrice;
+        TextView allMenuName, allMenuNote, allMenuTime, allMenuCharges, allMenuPrice;
         ImageView allMenuImage;
 
         public AllMenuViewHolder(@NonNull View itemView) {
