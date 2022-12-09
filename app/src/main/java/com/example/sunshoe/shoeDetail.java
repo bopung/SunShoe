@@ -44,7 +44,7 @@ public class shoeDetail extends AppCompatActivity {
         Picasso.get().load(imageUrl).fit().centerCrop().into(imageView);
 
         itemName.setText(name);
-        itemPrice.setText("Rp "+price);
+        itemPrice.setText("Rp "+price + "K");
         itemDescription.setText(description);
 
         Button cart = (Button)findViewById(R.id.button);
