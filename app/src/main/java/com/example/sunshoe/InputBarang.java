@@ -76,7 +76,7 @@ public class InputBarang extends AppCompatActivity {
                     @Override
                     public void onResponse(String response) {
                         Log.d("Register", "response :" + response);
-                        Toast.makeText(getBaseContext(),"response: "+response, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getBaseContext(),"Input Produk Berhasil ! ", Toast.LENGTH_SHORT).show();
 //                        processResponse("Save Data", response);
                         finish();
 

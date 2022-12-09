@@ -85,9 +85,11 @@ public class buktibayar extends AppCompatActivity {
                     @Override
                     public void onResponse(String response) {
                         Log.d("Register", "response :" + response);
-                        Toast.makeText(getBaseContext(),"response: "+response, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getBaseContext(),"Transaksi Berhasil ! ", Toast.LENGTH_SHORT).show();
                         processResponse("Save Data",response);
                         finish();
+                        Intent intent = new Intent(buktibayar.this, transactionsukses.class);
+                        buktibayar.this.startActivity(intent);
 
                     }
                 },
