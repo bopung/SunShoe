@@ -7,11 +7,23 @@
         <entry key="..\:/A S U S/SunShoe/app/src/main/res/drawable/light_orange_circle.xml" value="0.169" />
         <entry key="..\:/A S U S/SunShoe/app/src/main/res/drawable/violet_circular_border.xml" value="0.169" />
         <entry key="..\:/A S U S/SunShoe/app/src/main/res/drawable/white_circular_border.xml" value="0.169" />
+        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_aboutus.xml" value="0.25" />
+        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_all_menu.xml" value="0.4" />
+        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_buktibayar.xml" value="0.25" />
         <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_dashbord_toko.xml" value="0.264" />
+        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_delete.xml" value="0.25" />
+        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_input_barang.xml" value="0.25" />
+        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_loading.xml" value="0.25" />
+        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_main.xml" value="0.22554347826086957" />
+        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_maps.xml" value="0.25" />
         <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_page1.xml" value="0.264" />
         <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_page2.xml" value="0.264" />
         <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_register.xml" value="0.2" />
+        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_shoe_detail.xml" value="0.25" />
+        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_upload_image.xml" value="0.25" />
+        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
         <entry key="app/src/main/res/drawable-v24/ic_outline_order_24.xml" value="0.15" />
         <entry key="app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.15" />
         <entry key="app/src/main/res/drawable/ic_outline_help_24.xml" value="0.15" />
