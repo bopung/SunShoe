@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdminPanel">
+    tools:context=".AdminPanel"
+    android:background="@drawable/background">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,9 +25,11 @@
                 android:fontFamily="serif"
                 android:text="Admin Panel"
                 android:textAlignment="center"
-                android:textColor="#000000"
+                android:textColor="@color/white"
                 android:textSize="34sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_marginTop="50dp"
+                />
 
         </LinearLayout>
 
@@ -43,7 +46,9 @@
                 android:layout_marginTop="50dp"
                 android:layout_marginRight="20dp"
                 android:layout_weight="1"
-                android:text="Delete Product" />
+                android:text="Delete Product"
+                android:backgroundTint="@color/design_default_color_secondary"
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -58,13 +63,18 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_weight="1"
-                android:text="Order Transaction" />
+                android:layout_marginTop="50dp"
+                android:text="Order Transaction"
+                android:backgroundTint="@color/design_default_color_secondary"
+                />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:backgroundTint="@color/design_default_color_secondary"
+            >
 
             <Button
                 android:id="@+id/button5"
@@ -72,8 +82,11 @@
                 android:layout_height="88dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
                 android:layout_weight="1"
-                android:text="Input Product" />
+                android:text="Input Product"
+                android:backgroundTint="@color/design_default_color_secondary"
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -87,8 +100,11 @@
                 android:layout_height="88dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
                 android:layout_weight="1"
-                android:text="Past Order" />
+                android:text="Past Order"
+                android:backgroundTint="@color/design_default_color_secondary"
+                />
         </LinearLayout>
 
         <LinearLayout
