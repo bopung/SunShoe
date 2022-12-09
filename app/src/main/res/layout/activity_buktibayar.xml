@@ -52,7 +52,7 @@
             android:background="@drawable/radius_formwhiteblur"
             android:elevation="5dp"
             android:hint="Nomor HP"
-            android:inputType="textPassword"
+            android:inputType="text"
             android:paddingLeft="15dp"
             android:textSize="15dp" />
 
@@ -67,7 +67,7 @@
             android:background="@drawable/radius_formwhiteblur"
             android:elevation="5dp"
             android:hint="Alamat penerima"
-            android:inputType="textPassword"
+            android:inputType="text"
             android:paddingLeft="15dp"
             android:textSize="15dp" />
 
