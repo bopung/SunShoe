@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".transactionsukses"
+    android:background="@drawable/background">
+    <ImageView
+        android:id="@+id/centang"
+        android:layout_width="3000dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/centang">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tulisan"
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/centang"
+        android:text="Transaksi Telah Berhasil, Silahkan Hubungi WA 0811111111 / kembali ke beranda."
+        android:textColor="@color/white"
+        android:textAlignment="center">
+
+    </TextView>
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="150dp"
+            android:layout_below="@+id/tulisan"
+            android:text="WhatsApp"
+            android:layout_marginLeft="50dp"
+            android:textAlignment="center"
+            >
+
+        </Button>
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn1"
+        android:text="Kembali ke Beranda"
+        android:layout_marginLeft="50dp"
+        android:textAlignment="center"
+        >
+
+    </Button>
+
+
+</RelativeLayout>
