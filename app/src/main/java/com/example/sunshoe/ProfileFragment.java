@@ -73,6 +73,14 @@ public class ProfileFragment extends Fragment {
         dbuser.close();
         fullname.setText(name);
 
+        Button about = (Button) view.findViewById(R.id.AboutUs);
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(view.getContext(), aboutus.class));
+            }
+        });
+
         Button location = (Button) view.findViewById(R.id.btnLocation);
         location.setOnClickListener(new View.OnClickListener() {
             @Override
