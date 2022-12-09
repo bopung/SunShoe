@@ -16,11 +16,13 @@
         android:theme="@style/Theme.SunShoe"
         tools:targetApi="31">
         <activity
-
+            android:name=".transactiondone_detail"
+            android:exported="false" />
+        <activity
             android:name=".Order_Done"
-
+            android:exported="false" />
+        <activity
             android:name=".transactionsukses"
-
             android:exported="false" />
         <activity
             android:name=".transaction_detail"
