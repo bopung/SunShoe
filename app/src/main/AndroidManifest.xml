@@ -48,9 +48,6 @@
             android:name=".shoeDetail"
             android:exported="false" />
         <activity
-            android:name=".UploadImage"
-            android:exported="false" />
-        <activity
             android:name=".login"
             android:exported="false" />
         <activity

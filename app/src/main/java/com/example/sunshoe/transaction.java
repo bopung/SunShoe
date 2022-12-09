@@ -53,7 +53,7 @@ public class transaction extends RecyclerView.Adapter<transaction.AllMenuViewHol
 
         holder.allMenuName.setText(allmenuList.get(position).getProduct_name());
         holder.allMenuPrice.setText(Integer.toString(allmenuList.get(position).getProduct_price())+ " K");
-        holder.allMenuCharges.setText(Integer.toString(allmenuList.get(position).getProduct_size()));
+        holder.allMenuCharges.setText("SIZE: "+Integer.toString(allmenuList.get(position).getProduct_size()));
         holder.allMenuNote.setText(allmenuList.get(position).getNama());
 
         Picasso.get().load(allmenuList.get(position).getProduct_image()).fit().centerCrop().into(holder.allMenuImage);
@@ -133,7 +133,6 @@ public class transaction extends RecyclerView.Adapter<transaction.AllMenuViewHol
             allMenuName = itemView.findViewById(R.id.all_menu_name);
             allMenuNote = itemView.findViewById(R.id.all_menu_note);
             allMenuCharges = itemView.findViewById(R.id.all_menu_delivery_charge);
-            allMenuRating = itemView.findViewById(R.id.all_menu_rating);
             allMenuTime = itemView.findViewById(R.id.all_menu_deliverytime);
             allMenuPrice = itemView.findViewById(R.id.all_menu_price);
             allMenuImage = itemView.findViewById(R.id.all_menu_image);
