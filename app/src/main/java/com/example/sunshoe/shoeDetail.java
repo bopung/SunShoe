@@ -17,10 +17,10 @@ public class shoeDetail extends AppCompatActivity {
     ImageView imageView;
     TextView itemName;
     TextView itemPrice;
-    TextView itemRating;
+    TextView itemsize;
     TextView itemDescription;
 
-    String name, price, description, imageUrl;
+    String name, price, description, imageUrl, size;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,12 +33,14 @@ public class shoeDetail extends AppCompatActivity {
         price = intent.getStringExtra("price");
         description = intent.getStringExtra("desc");
         imageUrl = intent.getStringExtra("image");
+        size = intent.getStringExtra("size");
 
 
         imageView = findViewById(R.id.imageView5);
         itemName = findViewById(R.id.name);
         itemPrice = findViewById(R.id.price);
         itemDescription = findViewById(R.id.textView8);
+        itemsize = findViewById(R.id.textView20);
 
 
         Picasso.get().load(imageUrl).fit().centerCrop().into(imageView);
@@ -46,6 +48,7 @@ public class shoeDetail extends AppCompatActivity {
         itemName.setText(name);
         itemPrice.setText("Rp "+price + "K");
         itemDescription.setText(description);
+        itemsize.setText("Size : " + size);
 
         Button cart = (Button)findViewById(R.id.button);
         cart.setOnClickListener(new View.OnClickListener() {

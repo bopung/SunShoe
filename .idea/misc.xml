@@ -43,6 +43,8 @@
         <entry key="app/src/main/res/layout/activity_shoe.xml" value="0.1882537841796875" />
         <entry key="app/src/main/res/layout/activity_shoe_detail.xml" value="0.20653584798177083" />
         <entry key="app/src/main/res/layout/activity_transaction_detail.xml" value="0.29059883589198643" />
+        <entry key="app/src/main/res/layout/activity_transactiondone_detail.xml" value="0.2504528985507246" />
+        <entry key="app/src/main/res/layout/activity_transactionsukses.xml" value="0.15070921985815602" />
         <entry key="app/src/main/res/layout/activity_upload_image.xml" value="0.2504528985507246" />
         <entry key="app/src/main/res/layout/bottom_nav_menu.xml" value="0.10235507246376811" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.21920289855072464" />

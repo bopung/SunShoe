@@ -63,6 +63,7 @@ public class buktibayar extends AppCompatActivity {
                 intent.setType("image/*");
                 intent.setAction(Intent.ACTION_GET_CONTENT);
                 startActivityForResult(Intent.createChooser(intent, "Select Picture"), IMG_REQUEST);
+
             }
         });
 
@@ -148,6 +149,7 @@ public class buktibayar extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == IMG_REQUEST && resultCode == RESULT_OK && data != null){
             Uri path = data.getData();
+            Toast.makeText(getBaseContext(),"Upload Berhasil ! ", Toast.LENGTH_SHORT).show();
             try{
                 photo = MediaStore.Images.Media.getBitmap(getContentResolver(), path);
             }catch(IOException e){

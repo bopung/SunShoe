@@ -25,18 +25,19 @@
         android:textAlignment="center">
 
     </TextView>
-        <Button
-            android:id="@+id/btn1"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="150dp"
-            android:layout_below="@+id/tulisan"
-            android:text="WhatsApp"
-            android:layout_marginLeft="50dp"
-            android:textAlignment="center"
-            >
 
-        </Button>
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tulisan"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="101dp"
+        android:text="WhatsApp"
+        android:textAlignment="center">
+
+    </Button>
+
     <Button
         android:id="@+id/btn2"
         android:layout_width="300dp"
