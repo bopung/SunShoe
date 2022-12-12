@@ -74,12 +74,6 @@
                 android:layout_height="wrap_content"
                 android:text="TextView" />
 
-            <TextView
-                android:id="@+id/textView20"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
-
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="match_parent"
