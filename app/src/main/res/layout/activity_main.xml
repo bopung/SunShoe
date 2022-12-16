@@ -25,6 +25,7 @@
             android:id="@+id/navbar"
             android:layout_width="match_parent"
             android:layout_height="72dp"
+            android:backgroundTint="@color/design_default_color_secondary"
             app:menu="@menu/bottom_nav_menu" />
     </LinearLayout>
 
