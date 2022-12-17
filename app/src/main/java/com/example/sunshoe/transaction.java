@@ -61,21 +61,37 @@ public class transaction extends RecyclerView.Adapter<transaction.AllMenuViewHol
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(context, transaction_detail.class);
-                i.putExtra("id",Integer.toString(allmenuList.get(position).getId()));
-                i.putExtra("name", allmenuList.get(position).getProduct_name());
-                i.putExtra("price", Integer.toString(allmenuList.get(position).getProduct_price()));
-                i.putExtra("image", allmenuList.get(position).getProduct_image());
-                i.putExtra("nama", allmenuList.get(position).getNama());
-                i.putExtra("size", Integer.toString(allmenuList.get(position).getProduct_size()));
-                i.putExtra("alamat", allmenuList.get(position).getAlamat());
-                i.putExtra("norek", allmenuList.get(position).getNorek());
-                i.putExtra("bukti", allmenuList.get(position).getBukti());
-                i.putExtra("status", allmenuList.get(position).getStatus());
+                if(allmenuList.get(position).getStatus().equals("1")) {
+                    Intent i = new Intent(context, transaction_detail.class);
+                    i.putExtra("id", Integer.toString(allmenuList.get(position).getId()));
+                    i.putExtra("name", allmenuList.get(position).getProduct_name());
+                    i.putExtra("price", Integer.toString(allmenuList.get(position).getProduct_price()));
+                    i.putExtra("image", allmenuList.get(position).getProduct_image());
+                    i.putExtra("nama", allmenuList.get(position).getNama());
+                    i.putExtra("size", Integer.toString(allmenuList.get(position).getProduct_size()));
+                    i.putExtra("alamat", allmenuList.get(position).getAlamat());
+                    i.putExtra("norek", allmenuList.get(position).getNorek());
+                    i.putExtra("bukti", allmenuList.get(position).getBukti());
+                    i.putExtra("status", allmenuList.get(position).getStatus());
+                    i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    context.startActivity(i);
+                }
+                else{
+                    Intent i = new Intent(context, transactiondone_detail.class);
+                    i.putExtra("id", Integer.toString(allmenuList.get(position).getId()));
+                    i.putExtra("name", allmenuList.get(position).getProduct_name());
+                    i.putExtra("price", Integer.toString(allmenuList.get(position).getProduct_price()));
+                    i.putExtra("image", allmenuList.get(position).getProduct_image());
+                    i.putExtra("nama", allmenuList.get(position).getNama());
+                    i.putExtra("size", Integer.toString(allmenuList.get(position).getProduct_size()));
+                    i.putExtra("alamat", allmenuList.get(position).getAlamat());
+                    i.putExtra("norek", allmenuList.get(position).getNorek());
+                    i.putExtra("bukti", allmenuList.get(position).getBukti());
+                    i.putExtra("status", allmenuList.get(position).getStatus());
+                    i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    context.startActivity(i);
+                }
 
-
-                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                context.startActivity(i);
             }
         });
 
