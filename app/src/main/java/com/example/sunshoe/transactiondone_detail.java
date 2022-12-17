@@ -58,7 +58,7 @@ public class transactiondone_detail extends AppCompatActivity {
 
 
         Picasso.get().load(imageUrl).fit().centerCrop().into(imageView);
-        Picasso.get().load(bukti).fit().centerCrop().into(buktiview);
+        Picasso.get().load("https://stevanuspungky.my.id"+bukti).fit().centerCrop().into(buktiview);
 
         itemName.setText(name);
         itemPrice.setText("Rp "+price + "K");
