@@ -50,6 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textColor="#130101"
                 android:textStyle="bold" />
 
             <TextView
@@ -57,6 +58,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textColor="#100606"
                 android:textStyle="bold" />
 
             <TextView
@@ -64,6 +66,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textColor="#150707"
                 android:textStyle="bold" />
 
             <TextView
@@ -71,6 +74,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textColor="#020000"
                 android:textStyle="bold" />
 
             <TextView
@@ -78,6 +82,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView"
+                android:textColor="#1B0606"
                 android:textStyle="bold" />
 
             <ImageView
