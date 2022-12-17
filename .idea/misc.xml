@@ -7,15 +7,11 @@
         <entry key="..\:/A S U S/SunShoe/app/src/main/res/drawable/light_orange_circle.xml" value="0.169" />
         <entry key="..\:/A S U S/SunShoe/app/src/main/res/drawable/violet_circular_border.xml" value="0.169" />
         <entry key="..\:/A S U S/SunShoe/app/src/main/res/drawable/white_circular_border.xml" value="0.169" />
-        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_all_menu.xml" value="0.12158054711246201" />
         <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_dashbord_toko.xml" value="0.264" />
         <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_main.xml" value="0.22554347826086957" />
         <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_page1.xml" value="0.264" />
         <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_page2.xml" value="0.264" />
         <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_register.xml" value="0.2" />
-        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_shoe_detail.xml" value="0.264" />
-        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_transaction_detail.xml" value="0.25" />
-        <entry key="..\:/A S U S/SunShoe/app/src/main/res/layout/activity_transactiondone_detail.xml" value="0.25" />
         <entry key="app/src/main/res/drawable-v24/ic_outline_order_24.xml" value="0.15" />
         <entry key="app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.15" />
         <entry key="app/src/main/res/drawable/ic_outline_help_24.xml" value="0.15" />
@@ -51,6 +47,7 @@
         <entry key="app/src/main/res/layout/activity_transactionsukses.xml" value="0.15070921985815602" />
         <entry key="app/src/main/res/layout/activity_upload_image.xml" value="0.2504528985507246" />
         <entry key="app/src/main/res/layout/bottom_nav_menu.xml" value="0.10235507246376811" />
+        <entry key="app/src/main/res/layout/fragment_about_us_web.xml" value="0.14336372847011145" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.21920289855072464" />
         <entry key="app/src/main/res/layout/fragment_order.xml" value="0.24413887495448647" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.2635135135135135" />
